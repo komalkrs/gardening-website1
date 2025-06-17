@@ -1,0 +1,63 @@
+/* Basic Fade In Animation */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Fade In Keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide In From Left Animation */
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+/* Slide In Left Keyframes */
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-100px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Fade In Up Class */
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* Start hidden */
+}
+
+/* Service Card Hover Effect */
+.service-item:hover .service-text {
+  background: rgba(15, 66, 41, 0.6);
+  color: white;
+}
+
+/* Service Item Base Styling */
+.service-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Service Image Styling */
+.service-item .service-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

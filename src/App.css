@@ -1,0 +1,54 @@
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*navbar*/
+.hover-effect {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.hover-effect::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.hover-effect:hover::after {
+  width: 100%;
+}
+/*service*/
+.service-item {
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.service-item:hover {
+  transform: translateY(-5px);
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+/*projects*/
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.btn.active {
+  background-color: #198754;
+  color: white;
+  border-color: #198754;
+}
+
