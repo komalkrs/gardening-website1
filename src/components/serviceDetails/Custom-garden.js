@@ -23,6 +23,11 @@ const CustomGardenDesignPage = () => {
       </Helmet>
 
       <div className="text-center mb-4">
+        <div className="text-start mt-4">
+          <Link to="/services" className="btn btn-outline-success">
+            ← Back to Services
+          </Link>
+        </div>
         <h1 className="display-5">Custom Garden Design</h1>
         <p className="lead">Beautiful gardens crafted just for you!</p>
       </div>
@@ -52,6 +57,7 @@ const CustomGardenDesignPage = () => {
         <Link to="/contact" className="btn btn-success px-4 py-2">
           Start Your Design
         </Link>
+
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ const Outdoor1 = () => {
       {/* Hero Section */}
       <div
         className="project-hero"
-        style={{ backgroundImage: "url('/outdoor1.jpg')" }}
+        style={{ backgroundImage: "url('/images/img4.webp')" }}
         aria-label="Outdoor Garden Design"
       >
         <div className="project-hero-text">

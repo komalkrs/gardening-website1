@@ -15,10 +15,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_0qragpu',
-        'template_mgcgox2',
+        'service_089mjak',
+        'template_7fayjg6',
         form.current,
-        'lq2W-uFoV6TxY2-O8'
+        'KQuchI3ANpXpJIORI'
       )
       .then(() => {
         setLoading(false);
@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Komal's Garden</title>
+        <title>Contact Us | Sandip's Garden</title>
         <meta
           name="description"
           content="Get in touch with Komal's Garden for gardening consultations, custom plant designs, and green decor. Visit us in Hanmantwadi, Maharashtra."

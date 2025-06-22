@@ -23,6 +23,11 @@ const HomeGardenSetupPage = () => {
       </Helmet>
 
       <div className="text-center mb-4">
+        <div className="text-start mt-4">
+        <Link to="/services" className="btn btn-outline-success">
+          ← Back to Services
+        </Link>
+      </div>  
         <h1 className="display-5">Home Garden Setup</h1>
         <p className="lead">Transform your space into a lush green haven!</p>
       </div>

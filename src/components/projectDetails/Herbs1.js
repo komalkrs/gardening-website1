@@ -29,7 +29,7 @@ const Herbs1 = () => {
       {/* Hero Section */}
       <div
         className="project-hero"
-        style={{ backgroundImage: "url('/herbs1.jpg')" }}
+        style={{ backgroundImage: "url('/images/herbs1.webp')" }}
         aria-label="Herbal Garden Setup"
       >
         <div className="project-hero-text">

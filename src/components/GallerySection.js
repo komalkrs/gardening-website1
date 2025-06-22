@@ -3,21 +3,21 @@ import { Helmet } from 'react-helmet';
 import '../Gallery.css';
 
 const images = [
-  { src: '/indoor1.webp', alt: 'Indoor Plant Setup', category: 'Indoor' },
-  { src: '/herbs1.webp', alt: 'Herb Garden', category: 'Herbs' },
-  { src: '/indoor2.webp', alt: 'Indoor Plant Setup', category: 'Indoor' },
-  { src: '/outdoor2.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
-  { src: '/indoor3.webp', alt: 'Succulent Pots', category: 'Indoor' },
-  { src: '/outdoor3.webp', alt: 'Vertical Garden', category: 'Outdoor' },
-  { src: '/indoor4.webp', alt: 'Indoor Plant Setup', category: 'Indoor' },
-  { src: '/outdoor4.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
-  { src: '/herbs2.webp', alt: 'Kitchen Herbs', category: 'Herbs' },
-  { src: '/outdoor5.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
-  { src: '/herbs3.webp', alt: 'Herb Garden', category: 'Herbs' },
-  { src: '/outdoor1.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
-  { src: '/herbs4.webp', alt: 'Herb Garden', category: 'Herbs' },
-  { src: '/living-room.jpg', alt: 'Indoor Plant', category: 'Indoor' },
-  { src: '/indoor5.webp', alt: 'Indoor Plant Setup', category: 'Indoor' }
+  { src: '/images/indoor1.webp', alt: 'Indoor Plant Setup', category: 'Indoor' },
+  { src: '/images/herbs1.webp', alt: 'Herb Garden', category: 'Herbs' },
+  { src: '/images/indoor2.webp', alt: 'Indoor Plant Setup', category: 'Indoor' },
+  { src: '/images/outdoor2.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
+  { src: '/images/indoor3.webp', alt: 'Succulent Pots', category: 'Indoor' },
+  { src: '/images/outdoor3.webp', alt: 'Vertical Garden', category: 'Outdoor' },
+  { src: '/images/indoor4.webp', alt: 'Indoor Plant Setup', category: 'Indoor' },
+  { src: '/images/outdoor4.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
+  { src: '/images/herbs2.webp', alt: 'Kitchen Herbs', category: 'Herbs' },
+  { src: '/images/outdoor5.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
+  { src: '/images/herbs3.webp', alt: 'Herb Garden', category: 'Herbs' },
+  { src: '/images/outdoor1.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
+  { src: '/images/herbs4.webp', alt: 'Herb Garden', category: 'Herbs' },
+  { src: '/images/living-room.jpg', alt: 'Indoor Plant', category: 'Indoor' },
+  { src: '/images/indoor5.webp', alt: 'Indoor Plant Setup', category: 'Indoor' }
 ];
 
 const categories = ['All', 'Indoor', 'Outdoor', 'Herbs'];
@@ -40,7 +40,7 @@ const GallerySection = () => {
           name="keywords"
           content="garden gallery, indoor plants, herb garden, backyard landscaping, vertical garden, plant collection"
         />
-        <meta property="og:title" content="Gallery | Komal's Garden" />
+        <meta property="og:title" content="Gallery | Sandip's Garden" />
         <meta property="og:description" content="A visual tour of our indoor, outdoor, and herb gardening creations. Discover inspiration for your green space." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://komalsgarden.in/gallery" />

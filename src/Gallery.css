@@ -55,3 +55,12 @@
 .gallery-img-wrapper:hover .overlay-caption {
   opacity: 1;
 }
+.image-zoom {
+  overflow: hidden;
+}
+.image-zoom img {
+  transition: transform 0.4s ease-in-out;
+}
+.image-zoom:hover img {
+  transform: scale(1.1);
+}

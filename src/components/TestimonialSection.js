@@ -4,17 +4,17 @@ const testimonials = [
   {
     name: 'Aarti Deshmukh',
     message: 'My balcony is now a green paradise thanks to their gardening service. Highly recommended!',
-    image: '/client1.webp'
+    image: '/images/client1.webp'
   },
   {
     name: 'Rajeev Patil',
     message: 'I loved the herb garden setup they did in my kitchen. Fresh mint every day!',
-    image: '/client2.webp'
+    image: '/images/client2.webp'
   },
   {
     name: 'Neha Kulkarni',
     message: 'They gave my terrace a full makeover with planters, lighting, and a water feature. Amazing!',
-    image: '/client3.webp'
+    image: '/images/client3.webp'
   }
 ];
 

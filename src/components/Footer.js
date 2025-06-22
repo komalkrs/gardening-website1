@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -31,8 +32,8 @@ const Footer = () => {
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 fw-bold text-success">Contact</h5>
             <p><FaMapMarkerAlt className="me-2" /> Kolhapur, Maharashtra, India</p>
-            <p><FaEnvelope className="me-2" /> info@greentouch.com</p>
-            <p><FaPhoneAlt className="me-2" /> +91-9876543210</p>
+            <p><FaEnvelope className="me-2" /> sandihpkadam@gmail.com</p>
+            <p><FaPhoneAlt className="me-2" /> +91-8855080150</p>
           </div>
 
           {/* Column 4: Social */}
@@ -63,4 +64,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer; 

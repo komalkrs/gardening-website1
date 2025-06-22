@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const serviceData = [
   {
     title: 'Home Garden Setup',
-    image: '/home-garden.webp',
+    image: '/images/home-garden.webp',
     alt: 'Home Garden Setup',
     description: 'Balcony, terrace, herb, and indoor garden solutions tailored to your space.',
     fullDescription: `• Balcony garden design
@@ -19,7 +19,7 @@ const serviceData = [
   },
   {
     title: 'Plant Maintenance Services',
-    image: '/client2.webp',
+    image: '/images/client2.webp',
     alt: 'Plant Maintenance Services',
     description: 'We keep your plants healthy with regular care and expert monitoring.',
     fullDescription: `• Weekly/monthly maintenance
@@ -32,7 +32,7 @@ const serviceData = [
   },
   {
     title: 'Lawn & Landscape Care',
-    image: '/service2.webp',
+    image: '/images/service2.webp',
     alt: 'Lawn and Landscape Care',
     description: 'Professional lawn mowing, flower planting, and seasonal care for your green space.',
     fullDescription: `• Lawn mowing & weeding
@@ -45,7 +45,7 @@ const serviceData = [
   },
   {
     title: 'Custom Garden Design',
-    image: '/custom-garden.jpg',
+    image: '/images/custom-garden.webp',
     alt: 'Custom Garden Design Services',
     description: 'Unique garden design tailored to your space, sun, and climate needs.',
     fullDescription: `• Garden layout consultation
@@ -64,10 +64,10 @@ const Services = () => {
   return (
     <div className="container mt-5 fade-in">
       <Helmet>
-        <title>Our Gardening Services | Komal's Garden</title>
+        <title>Our Gardening Services | Sandip's Garden</title>
         <meta name="description" content="Explore our professional gardening services like landscaping, pruning, maintenance, and eco-friendly green technology." />
         <meta name="keywords" content="gardening services, garden care, landscaping, pruning plants, green technology, maintenance" />
-        <meta property="og:title" content="Our Gardening Services | Komal's Garden" />
+        <meta property="og:title" content="Our Gardening Services | Sandip's Garden" />
         <meta property="og:description" content="We offer top-notch services like landscaping, pruning, and eco-friendly garden maintenance." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com/services" />

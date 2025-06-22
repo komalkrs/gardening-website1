@@ -6,7 +6,7 @@ const Indoor1 = () => {
   return (
     <div className="project-detail-container fade-in">
       {/* Hero Image with Title */}
-      <div className="project-hero" style={{ backgroundImage: "url('/indoor1.jpg')" }}>
+      <div className="project-hero" style={{ backgroundImage: "url('/images/indoor5.webp')" }}>
         <div className="project-hero-text">
           <h1>Indoor Plant Setup</h1>
         </div>

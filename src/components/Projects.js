@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import BeforeAfterGallery from './BeforeAfterGallery';
 
 const projectImages = [
-  { src: '/indoor-plant.jpg', alt: 'Indoor plant shelf arrangement', category: 'Indoor', link: '/projects/indoor1' },
-  { src: '/img2.webp', alt: 'Outdoor garden landscape with flowering plants', category: 'Outdoor', link: '/projects/outdoor1' },
-  { src: '/balcony-herbal-garden.jpg', alt: 'Balcony herbal garden setup', category: 'Herbs', link: '/projects/herbs1' },
-  { src: '/living-room.jpg', alt: 'Living room succulent setup', category: 'Indoor', link: '/projects/indoor1' },
-  { src: '/img5.webp', alt: 'Terrace garden herbs', category: 'Herbs', link: '/projects/herbs1' },
-  { src: '/img6.webp', alt: 'Lawn landscape makeover', category: 'Outdoor', link: '/projects/outdoor1' },
+  { src: '/images/indoor-plant.webp', alt: 'Indoor plant shelf arrangement', category: 'Indoor', link: '/projects/indoor1' },
+  { src: '/images/img2.webp', alt: 'Outdoor garden landscape with flowering plants', category: 'Outdoor', link: '/projects/outdoor1' },
+  { src: '/images/balcony-herbal-garden.webp', alt: 'Balcony herbal garden setup', category: 'Herbs', link: '/projects/herbs1' },
+  { src: '/images/living-room.webp', alt: 'Living room succulent setup', category: 'Indoor', link: '/projects/indoor1' },
+  { src: '/images/img5.webp', alt: 'Terrace garden herbs', category: 'Herbs', link: '/projects/herbs1' },
+  { src: '/images/image6.webp', alt: 'Lawn landscape makeover', category: 'Outdoor', link: '/projects/outdoor1' },
 ];
 
 const categories = ['All', 'Indoor', 'Outdoor', 'Herbs'];
@@ -65,7 +66,9 @@ const Projects = () => {
               onClick={() => setSelectedImage(img)}
               style={{ cursor: 'pointer' }}
             >
-              <img src={img.src} alt={img.alt} className="img-fluid rounded shadow-sm" />
+              <img src={img.src} alt={img.alt} className="img-fluid rounded shadow-sm" style={{
+                width: '100%', height: '300px', objectFit: 'cover', borderRadius: '10px'
+              }} />
               <div className="text-center mt-2">
                 <p>{img.alt}</p>
                 <a href={img.link} className="btn btn-sm btn-success mt-1">
@@ -76,7 +79,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-
+       <BeforeAfterGallery />
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
