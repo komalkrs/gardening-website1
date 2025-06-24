@@ -31,20 +31,15 @@ const GallerySection = () => {
   return (
     <>
       <Helmet>
-        <title>Gallery | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Explore Komal's Garden gallery featuring stunning indoor plants, outdoor landscaping, and herb gardens. See how we bring green to life!"
-        />
-        <meta
-          name="keywords"
-          content="garden gallery, indoor plants, herb garden, backyard landscaping, vertical garden, plant collection"
-        />
-        <meta property="og:title" content="Gallery | Sandip's Garden" />
-        <meta property="og:description" content="A visual tour of our indoor, outdoor, and herb gardening creations. Discover inspiration for your green space." />
+        <title>Project Gallery | Green Garden Works in Kolhapur</title>
+        <meta name="description" content="Browse our gallery to see beautiful indoor and outdoor garden setups, landscape projects, and plant styling done by Green Garden in Kolhapur." />
+        <meta name="keywords" content="garden project gallery, Kolhapur gardening, landscaping images, indoor garden, outdoor garden, before after garden" />
+        <meta property="og:title" content="Project Gallery | Green Garden Kolhapur" />
+        <meta property="og:description" content="Discover the transformation magic of Green Garden through our stunning photo gallery of completed garden projects." />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/gallery" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://komalsgarden.in/gallery" />
-        <meta property="og:image" content="https://komalsgarden.in/images/gallery-preview.webp" />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/preview.jpg" />
+        <link rel="canonical" href="https://green-garden-website.vercel.app/gallery" />
       </Helmet>
 
       <section className="py-5 bg-light fade-in" id="gallery">
