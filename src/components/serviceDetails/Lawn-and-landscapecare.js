@@ -6,28 +6,22 @@ const LawnLandscapeCarePage = () => {
   return (
     <div className="container my-5">
       <Helmet>
-        <title>Lawn & Landscape Care | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Comprehensive lawn and landscape care including mowing, weeding, planting, and seasonal garden support."
-        />
-        <meta
-          name="keywords"
-          content="lawn care, landscape maintenance, gardening services"
-        />
-        <meta property="og:title" content="Lawn & Landscape Care | Komal's Garden" />
-        <meta property="og:description" content="We provide lawn mowing, seasonal flower planting, hedge trimming and more for your landscape." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/services/lawn-landscape-care" />
-        <meta property="og:image" content="https://yourdomain.com/images/service3.jpg" />
+        <title>Lawn & Landscape Care Services in Kolhapur | Green Garden</title>
+        <meta name="description" content="Get expert lawn care and landscaping services in Kolhapur. We provide grass trimming, watering systems, seasonal plant setup, and more." />
+        <meta name="keywords" content="lawn care, landscaping Kolhapur, landscape design, garden makeover, grass trimming" />
+        <meta property="og:title" content="Lawn and Landscape Care by Green Garden" />
+        <meta property="og:description" content="Premium lawn maintenance and landscape services to beautify your outdoor space." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/service2.webp" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/services/lawn-landscape-care" />
       </Helmet>
+
 
       <div className="text-center mb-4">
         <div className="text-start mt-4">
-        <Link to="/services" className="btn btn-outline-success">
-          ← Back to Services
-        </Link>
-      </div>  
+          <Link to="/services" className="btn btn-outline-success">
+            ← Back to Services
+          </Link>
+        </div>
         <h1 className="display-5">Lawn & Landscape Care</h1>
         <p className="lead">Keep your garden looking its best all year round!</p>
       </div>
@@ -35,7 +29,7 @@ const LawnLandscapeCarePage = () => {
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
           <img
-            src="/img6.webp"
+            src="/images/img6.webp"
             alt="Lawn & Landscape Care"
             className="img-fluid rounded shadow"
           />

@@ -8,23 +8,15 @@ const Outdoor1 = () => {
     <div className="project-detail-container fade-in">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Outdoor Garden Design | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Explore our Outdoor Garden Design project featuring vibrant flowering plants, terracotta pots, and sustainable landscaping."
-        />
-        <meta
-          name="keywords"
-          content="outdoor gardening, landscape design, flowering plants, garden setup, sustainable gardening, Pune"
-        />
-        <meta property="og:title" content="Outdoor Garden Design | Komal's Garden" />
-        <meta
-          property="og:description"
-          content="Beautiful outdoor garden with seasonal flowers, eco-friendly layout, and terracotta pots. Perfect for home entrances and balconies."
-        />
-        <meta property="og:image" content="https://yourdomain.com/outdoor1.jpg" />
-        <meta property="og:url" content="https://yourdomain.com/projects/outdoor1" />
+        <title>Outdoor Landscaping Project | Green Garden Kolhapur</title>
+        <meta name="description" content="View our Outdoor Landscaping project — a complete makeover with lawn, decorative plants, and eco-friendly layout for a bungalow in Kolhapur." />
+        <meta name="keywords" content="outdoor gardening, landscape design Kolhapur, garden makeover, lawn setup" />
+        <meta property="og:title" content="Outdoor Garden Project - Green Garden" />
+        <meta property="og:description" content="We designed a stunning outdoor garden with functional and beautiful landscaping for our client." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/outdoor1.webp" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/projects/outdoor1" />
       </Helmet>
+
 
       {/* Hero Section */}
       <div
@@ -74,7 +66,7 @@ const Outdoor1 = () => {
               <ul className="list-unstyled small">
                 <li><strong>📂 Category:</strong> Outdoor</li>
                 <li><strong>🕒 Duration:</strong> 3 Days</li>
-                <li><strong>📍 Location:</strong> Sangli, India</li>
+                <li><strong>📍 Location:</strong> Madangad Landscape,Kolhapur, India</li>
                 <li><strong>📅 Date:</strong> April 2025</li>
               </ul>
             </div>

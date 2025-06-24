@@ -6,28 +6,23 @@ const HomeGardenSetupPage = () => {
   return (
     <div className="container my-5">
       <Helmet>
-        <title>Home Garden Setup | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Get your dream home garden setup with balcony, terrace, herb, and indoor garden solutions customized for your space."
-        />
-        <meta
-          name="keywords"
-          content="home garden, balcony garden, terrace garden, herb garden, indoor plants"
-        />
-        <meta property="og:title" content="Home Garden Setup | Komal's Garden" />
-        <meta property="og:description" content="We provide complete home garden setup services including balcony, terrace, herb, and indoor plant solutions." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/services/home-garden-setup" />
-        <meta property="og:image" content="https://yourdomain.com/images/service1.jpg" />
+        <title>Home Garden Setup Services in Kolhapur | Green Garden</title>
+        <meta name="description" content="Transform your space with our home garden setup service in Kolhapur. We help you choose the right plants, planters, and layouts for balconies, terraces, and yards." />
+        <meta name="keywords" content="home garden setup, balcony garden, terrace garden Kolhapur, gardening services, indoor garden" />
+        <meta property="og:title" content="Home Garden Setup by Green Garden" />
+        <meta property="og:description" content="Get expert home gardening solutions — from soil to pot selection and plant care." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/home-garden.webp" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/services/home-garden-setup" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
+
 
       <div className="text-center mb-4">
         <div className="text-start mt-4">
-        <Link to="/services" className="btn btn-outline-success">
-          ← Back to Services
-        </Link>
-      </div>  
+          <Link to="/services" className="btn btn-outline-success">
+            ← Back to Services
+          </Link>
+        </div>
         <h1 className="display-5">Home Garden Setup</h1>
         <p className="lead">Transform your space into a lush green haven!</p>
       </div>
@@ -35,7 +30,7 @@ const HomeGardenSetupPage = () => {
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
           <img
-            src="/home-garden.webp"
+            src="/images/home-garden.webp"
             alt="Home Garden Setup"
             className="img-fluid rounded shadow"
           />

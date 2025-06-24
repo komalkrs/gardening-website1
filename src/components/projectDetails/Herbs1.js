@@ -8,23 +8,16 @@ const Herbs1 = () => {
     <div className="project-detail-container fade-in">
       {/* SEO Meta Tags */}
       <Helmet>
-        <title>Herbal Garden Project | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Discover our Herbal Garden setup featuring Tulsi, Mint, Coriander, and more. Perfect for kitchens and small balconies!"
-        />
-        <meta
-          name="keywords"
-          content="herbal garden, kitchen herbs, balcony garden, mint, tulsi, coriander, organic herbs, gardening project"
-        />
-        <meta property="og:title" content="Herbal Garden Project | Komal's Garden" />
-        <meta
-          property="og:description"
-          content="This project includes fresh herbs like Mint, Basil, and Coriander in terracotta pots. Great for healthy, organic living!"
-        />
-        <meta property="og:image" content="https://yourdomain.com/herbs1.jpg" />
-        <meta property="og:url" content="https://yourdomain.com/projects/herbs1" />
+        <title>Herbal Garden Project | Green Garden Kolhapur</title>
+        <meta name="description" content="Explore our Herbal Garden project — a curated selection of medicinal and aromatic plants designed for home gardens in Kolhapur." />
+        <meta name="keywords" content="herbal garden, herbs project Kolhapur, medicinal plants, garden herbs, Green Garden" />
+        <meta property="og:title" content="Herbal Garden Project by Green Garden" />
+        <meta property="og:description" content="Custom-designed herbal garden for a healthy lifestyle — check our Kolhapur client’s transformation." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/herbs1.webp" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/projects/herbs1" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
+
 
       {/* Hero Section */}
       <div

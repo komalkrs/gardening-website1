@@ -6,21 +6,15 @@ const CustomGardenDesignPage = () => {
   return (
     <div className="container my-5">
       <Helmet>
-        <title>Custom Garden Design | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Unique garden designs tailored for your space, lifestyle, and environment using eco-friendly solutions."
-        />
-        <meta
-          name="keywords"
-          content="custom garden design, vertical garden, eco-friendly garden"
-        />
-        <meta property="og:title" content="Custom Garden Design | Komal's Garden" />
-        <meta property="og:description" content="We offer vertical gardens, layout consultations, and drip irrigation design based on your space." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/services/custom-garden-design" />
-        <meta property="og:image" content="https://yourdomain.com/images/service4.jpg" />
+        <title>Custom Garden Design Services in Kolhapur | Green Garden</title>
+        <meta name="description" content="Want a garden that's uniquely yours? Get custom garden design services with layout planning, theme gardens, and seasonal recommendations in Kolhapur." />
+        <meta name="keywords" content="custom garden design, themed gardens, garden planning, green design Kolhapur" />
+        <meta property="og:title" content="Custom Garden Design by Green Garden" />
+        <meta property="og:description" content="Tailored garden layouts and ideas for your space — executed with creativity and care." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/custom-garden.jpg" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/services/custom-garden" />
       </Helmet>
+
 
       <div className="text-center mb-4">
         <div className="text-start mt-4">
@@ -35,7 +29,7 @@ const CustomGardenDesignPage = () => {
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
           <img
-            src="/custom-garden.jpg"
+            src="/images/custom-garden.webp"
             alt="Custom Garden Design"
             className="img-fluid rounded shadow"
           />

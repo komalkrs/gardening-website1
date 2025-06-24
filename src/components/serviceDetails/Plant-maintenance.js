@@ -6,28 +6,22 @@ const PlantMaintenancePage = () => {
   return (
     <div className="container my-5">
       <Helmet>
-        <title>Plant Maintenance Services | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Keep your plants healthy with Komal's expert plant maintenance services including watering, pruning, pest control, and more."
-        />
-        <meta
-          name="keywords"
-          content="plant maintenance, garden care, pruning, watering, plant health, Komal's Garden"
-        />
-        <meta property="og:title" content="Plant Maintenance Services | Komal's Garden" />
-        <meta property="og:description" content="Komal's expert team provides regular plant maintenance to keep your garden lush and healthy." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/services/plant-maintenance" />
-        <meta property="og:image" content="https://yourdomain.com/images/service2.jpg" />
+        <title>Plant Maintenance Services in Kolhapur | Green Garden</title>
+        <meta name="description" content="Keep your plants healthy and vibrant with our plant maintenance services. We offer trimming, repotting, pest control, and watering routines in Kolhapur." />
+        <meta name="keywords" content="plant maintenance, gardening service Kolhapur, repotting plants, trimming, pest control" />
+        <meta property="og:title" content="Plant Maintenance by Green Garden" />
+        <meta property="og:description" content="Regular plant care and maintenance service for homes and offices in Kolhapur." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/plant-maintenance.webp" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/services/plant-maintenance" />
       </Helmet>
+
 
       <div className="text-center mb-4">
         <div className="text-start mt-4">
-        <Link to="/services" className="btn btn-outline-success">
-          ← Back to Services
-        </Link>
-      </div>  
+          <Link to="/services" className="btn btn-outline-success">
+            ← Back to Services
+          </Link>
+        </div>
         <h1 className="display-5">Plant Maintenance Services</h1>
         <p className="lead">Healthy plants, happy space!</p>
       </div>
@@ -35,7 +29,7 @@ const PlantMaintenancePage = () => {
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
           <img
-            src="/client2.webp"
+            src="/images/client2.webp"
             alt="Plant Maintenance Services"
             className="img-fluid rounded shadow"
           />

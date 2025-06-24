@@ -24,16 +24,18 @@ const Home = () => {
     <>
       <DarkModeToggle />
       <Helmet>
-        <title>Sandip's Garden | Gardening Services in Kolhapur</title>
-        <link rel="preload" as="image" href="/images/header1.webp" />
-        <link rel="preload" as="video" href="/images/hero.mp4" type="video/mp4" />
-        <meta name="description" content="We offer professional gardening services in Kolhapur including garden setup, plant maintenance, lawn care, and custom garden design." />
-        <meta name="keywords" content="gardening Kolhapur, indoor plants, garden maintenance, lawn care, garden design" />
-        <meta property="og:title" content="Sandip's Garden | Gardening Services in Kolhapur" />
-        <meta property="og:description" content="Transform your home or office with our expert gardening services. Contact us today!" />
-        <meta property="og:url" content="https://komalsgarden.vercel.app" />
-        <meta property="og:image" content="https://komalsgarden.vercel.app/preview.jpg" />
+        <title>Green Garden | Gardening Services in Kolhapur</title>
+        <meta name="description" content="Expert gardening services in Kolhapur — including garden setup, plant maintenance, lawn care, and custom designs." />
+        <meta name="keywords" content="gardening Kolhapur, garden services, plant maintenance, lawn care, landscape design" />
+        <meta property="og:title" content="Green Garden | Gardening Services in Kolhapur" />
+        <meta property="og:description" content="Transform your space into a green paradise with Green Garden's expert gardening services in Kolhapur." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/preview.jpg" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
+
+
+
 
       <div className="container-fluid p-0 " >
         <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">

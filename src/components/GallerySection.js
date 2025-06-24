@@ -16,7 +16,7 @@ const images = [
   { src: '/images/herbs3.webp', alt: 'Herb Garden', category: 'Herbs' },
   { src: '/images/outdoor1.webp', alt: 'Backyard Landscaping', category: 'Outdoor' },
   { src: '/images/herbs4.webp', alt: 'Herb Garden', category: 'Herbs' },
-  { src: '/images/living-room.jpg', alt: 'Indoor Plant', category: 'Indoor' },
+  { src: '/images/living-room.webp', alt: 'Indoor Plant', category: 'Indoor' },
   { src: '/images/indoor5.webp', alt: 'Indoor Plant Setup', category: 'Indoor' }
 ];
 

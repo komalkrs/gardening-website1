@@ -64,15 +64,14 @@ const Services = () => {
   return (
     <div className="container mt-5 fade-in">
       <Helmet>
-        <title>Our Gardening Services | Sandip's Garden</title>
-        <meta name="description" content="Explore our professional gardening services like landscaping, pruning, maintenance, and eco-friendly green technology." />
-        <meta name="keywords" content="gardening services, garden care, landscaping, pruning plants, green technology, maintenance" />
-        <meta property="og:title" content="Our Gardening Services | Sandip's Garden" />
-        <meta property="og:description" content="We offer top-notch services like landscaping, pruning, and eco-friendly garden maintenance." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/services" />
-        <meta property="og:image" content="https://yourdomain.com/images/services-preview.webp" />
+        <title>Our Services | Green Garden Kolhapur</title>
+        <meta name="description" content="Explore our professional gardening services including garden setup, landscaping, plant care, and more." />
+        <meta name="keywords" content="gardening services, Kolhapur landscaping, indoor plants, plant maintenance" />
+        <meta property="og:title" content="Services - Green Garden Kolhapur" />
+        <meta property="og:description" content="Wide range of gardening services tailored to your home and office." />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/services" />
       </Helmet>
+
 
       <div className="container-xxl py-5">
         <h2>Our Services</h2>

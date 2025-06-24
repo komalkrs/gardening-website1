@@ -1,10 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../projectDetail.css'; // Optional custom CSS for styling
+import { Helmet } from 'react-helmet';
 
 const Indoor1 = () => {
   return (
     <div className="project-detail-container fade-in">
+      <Helmet>
+        <title>Indoor Garden Setup | Green Garden Kolhapur</title>
+        <meta name="description" content="Check out our Indoor Garden project — a cozy and refreshing home corner with natural indoor plants, perfect for apartment living." />
+        <meta name="keywords" content="indoor plants, apartment gardening, Kolhapur indoor garden, small garden setup, house plants" />
+        <meta property="og:title" content="Indoor Plant Project by Green Garden" />
+        <meta property="og:description" content="We transformed an indoor space into a fresh green zone. Explore the project gallery and details." />
+        <meta property="og:image" content="https://green-garden-website.vercel.app/images/indoor1.webp" />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/projects/indoor1" />
+      </Helmet>
+
       {/* Hero Image with Title */}
       <div className="project-hero" style={{ backgroundImage: "url('/images/indoor5.webp')" }}>
         <div className="project-hero-text">

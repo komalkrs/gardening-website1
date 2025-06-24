@@ -25,21 +25,14 @@ const Projects = () => {
   return (
     <>
       <Helmet>
-        <title>Our Gardening Projects | Komal's Garden</title>
-        <meta
-          name="description"
-          content="Explore Komal's Garden project gallery including indoor decor, outdoor landscapes, and herbal gardens."
-        />
-        <meta
-          name="keywords"
-          content="garden projects, indoor plants, outdoor gardens, herbs, gardening gallery"
-        />
-        <meta property="og:title" content="Our Gardening Projects | Komal's Garden" />
-        <meta property="og:description" content="Get inspired by Komal's completed indoor and outdoor garden setups." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://komalsgarden.in/projects" />
-        <meta property="og:image" content="https://komalsgarden.in/images/projects-preview.webp" />
+        <title>Projects | Our Gardening Work | Green Garden</title>
+        <meta name="description" content="View our completed gardening and landscaping projects across Kolhapur." />
+        <meta name="keywords" content="gardening projects, landscaping samples, Kolhapur gardens" />
+        <meta property="og:title" content="Green Garden Projects" />
+        <meta property="og:description" content="See how we’ve transformed outdoor and indoor spaces with our expert gardening work." />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/projects" />
       </Helmet>
+
 
       <div className="container mt-5 fade-in" id="projects">
         <h2 className="mb-4 text-center">Our Work</h2>
@@ -66,7 +59,7 @@ const Projects = () => {
               onClick={() => setSelectedImage(img)}
               style={{ cursor: 'pointer' }}
             >
-              <img src={img.src} alt={img.alt} className="img-fluid rounded shadow-sm" style={{
+              <img src={img.src} alt={img.alt} loading="lazy" className="img-fluid rounded shadow-sm" style={{
                 width: '100%', height: '300px', objectFit: 'cover', borderRadius: '10px'
               }} />
               <div className="text-center mt-2">
@@ -79,7 +72,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-       <BeforeAfterGallery />
+      <BeforeAfterGallery />
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
@@ -97,6 +90,7 @@ const Projects = () => {
                   src={selectedImage.src}
                   alt={selectedImage.alt}
                   className="img-fluid w-70 rounded"
+                  loading="lazy"
                 />
                 <p className="text-center my-3">{selectedImage.alt}</p>
                 <div className="text-center mb-3">

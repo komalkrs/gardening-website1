@@ -6,10 +6,14 @@ const About = () => {
 
     <section className="py-5 bg-light fade-in" id="about">
       <Helmet>
-        <title>About Us | Sandip's Garden</title>
-        <meta name="description" content="Learn about our passion for plants and how Komal's Garden started offering eco-friendly gardening solutions in Kolhapur." />
-        <meta name="keywords" content="about Komal's Garden, gardening journey, garden story, eco-friendly garden" />
+        <title>About Us | Green Garden</title>
+        <meta name="description" content="Learn about Green Garden’s mission, team, and passion for creating beautiful green spaces in Kolhapur." />
+        <meta name="keywords" content="about gardening services, gardening team Kolhapur, green garden story" />
+        <meta property="og:title" content="About Green Garden" />
+        <meta property="og:description" content="Discover who we are and how we help Kolhapur homes bloom with greenery." />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/about" />
       </Helmet>
+
 
       <div className="container">
         <div className="row align-items-center">

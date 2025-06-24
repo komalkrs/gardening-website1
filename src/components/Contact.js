@@ -38,21 +38,14 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Sandip's Garden</title>
-        <meta
-          name="description"
-          content="Get in touch with Komal's Garden for gardening consultations, custom plant designs, and green decor. Visit us in Hanmantwadi, Maharashtra."
-        />
-        <meta
-          name="keywords"
-          content="contact garden expert, gardening consultation, plant service, Hanmantwadi, Maharashtra, Komal's Garden"
-        />
-        <meta property="og:title" content="Contact Us | Komal's Garden" />
-        <meta property="og:description" content="Reach out to Komal's Garden for expert gardening help or visit our location. Let's grow something beautiful together!" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://komalsgarden.in/contact" />
-        <meta property="og:image" content="https://komalsgarden.in/images/contact-preview.jpg" />
+        <title>Contact Us | Green Garden Kolhapur</title>
+        <meta name="description" content="Get in touch with Green Garden for gardening consultations, service bookings, and inquiries." />
+        <meta name="keywords" content="contact garden service, gardening Kolhapur, book garden service" />
+        <meta property="og:title" content="Contact Green Garden" />
+        <meta property="og:description" content="Reach out to us for any garden-related service or consultation in Kolhapur." />
+        <meta property="og:url" content="https://green-garden-website.vercel.app/contact" />
       </Helmet>
+
 
       <div className="container my-5 py-5 px-4 shadow bg-white rounded">
         <div className="row g-4 align-items-center">
