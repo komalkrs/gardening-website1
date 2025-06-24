@@ -1,54 +1,100 @@
-/* Basic Fade In Animation */
+/* ---------------------
+   Basic Fade In Animation
+------------------------ */
 .fade-in {
   opacity: 0;
-  animation: fadeIn ease 1s forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 }
+
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-/* Slide In From Left Animation */
+/* ---------------------
+   Slide In From Left
+------------------------ */
 .slide-in-left {
+  opacity: 0;
   animation: slideInLeft 1s ease-out forwards;
 }
 
-/* Slide In Left Keyframes */
 @keyframes slideInLeft {
-  0% { opacity: 0; transform: translateX(-100px); }
-  100% { opacity: 1; transform: translateX(0); }
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-/* Fade In Up Animation */
+/* ---------------------
+   Fade In Up
+------------------------ */
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
 @keyframes fadeInUp {
-  from {
+  0% {
     opacity: 0;
     transform: translate3d(0, 40px, 0);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 }
 
-/* Fade In Up Class */
-.fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
-  opacity: 0; /* Start hidden */
+/* ---------------------
+   Fade In Right
+------------------------ */
+.fade-in-right {
+  opacity: 0;
+  animation: fadeInRight 1s ease-out forwards;
 }
 
-/* Service Card Hover Effect */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---------------------
+   Service Item Hover
+------------------------ */
 .service-item:hover .service-text {
   background: rgba(15, 66, 41, 0.6);
   color: white;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Service Item Base Styling */
+/* ---------------------
+   Service Item Styling
+------------------------ */
 .service-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
 }
 
 /* Service Image Styling */
