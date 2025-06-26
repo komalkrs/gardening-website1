@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import GallerySection from './GallerySection';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
-import TestimonialSection from './TestimonialSection';
 import DarkModeToggle from './DarkModeToggle';
+
+// Lazy load heavy components
+const GallerySection = lazy(() => import('./GallerySection'));
+const TestimonialSection = lazy(() => import('./TestimonialSection'));
+
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
 
-  // Show button when page is scrolled down 200px
   useEffect(() => {
     const handleScroll = () => {
       setShowButton(window.scrollY > 200);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -32,12 +33,10 @@ const Home = () => {
         <meta property="og:image" content="https://green-garden-website.vercel.app/images/preview.jpg" />
         <meta property="og:url" content="https://green-garden-website.vercel.app/" />
         <meta name="robots" content="index, follow" />
+        <link rel="preload" as="image" href="/images/header1.webp" />
       </Helmet>
 
-
-
-
-      <div className="container-fluid p-0 " >
+      <div className="container-fluid p-0">
         <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
 
@@ -169,13 +168,18 @@ const Home = () => {
           </div>
         </section>
 
+        
+        {/* Gallery Section - Lazy loaded */}
+        <Suspense fallback={<div className="text-center py-5">Loading Gallery...</div>}>
+          <GallerySection />
+        </Suspense>
 
-        {/* Gallery Section */}
-        <GallerySection />
+        {/* Testimonial Section - Lazy loaded */}
+        <Suspense fallback={<div className="text-center py-5">Loading Testimonials...</div>}>
+          <TestimonialSection />
+        </Suspense>
 
-        {/* Testimonial Section*/}
-        <TestimonialSection />
-        {/* Scroll-to-top Button */}
+        {/* Scroll to Top */}
         {showButton && (
           <button
             onClick={scrollToTop}
@@ -197,8 +201,6 @@ const Home = () => {
         )}
       </div>
     </>
-
-
   );
 };
 
