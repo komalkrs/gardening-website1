@@ -1,4 +1,4 @@
-import React, { useEffect, useState, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 import DarkModeToggle from './DarkModeToggle';
 
@@ -7,19 +7,6 @@ const GallerySection = lazy(() => import('./GallerySection'));
 const TestimonialSection = lazy(() => import('./TestimonialSection'));
 
 const Home = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowButton(window.scrollY > 200);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <>
@@ -179,26 +166,7 @@ const Home = () => {
           <TestimonialSection />
         </Suspense>
 
-        {/* Scroll to Top */}
-        {showButton && (
-          <button
-            onClick={scrollToTop}
-            className="btn btn-success position-fixed"
-            style={{
-              bottom: '20px',
-              right: '20px',
-              borderRadius: '50%',
-              width: '40px',
-              height: '40px',
-              zIndex: 1000,
-              boxShadow: '0 4px 8px rgba(0,0,0,0.3)',
-            }}
-            aria-label="Scroll to top"
-            title="Go to Top"
-          >
-            ↑
-          </button>
-        )}
+  
       </div>
     </>
   );

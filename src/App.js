@@ -17,6 +17,8 @@ import CustomGardenDesignPage from './components/serviceDetails/Custom-garden';
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi';
 import DarkModeToggle from './components/DarkModeToggle';
+import ScrollToTopButton from './components/ScrollToTopButton';
+
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,6 +103,8 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
+      {/* Scroll to Top */}
+      <ScrollToTopButton />
     </>
   );
 };
