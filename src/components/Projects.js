@@ -38,17 +38,18 @@ const Projects = () => {
         <h2 className="mb-4 text-center">Our Work</h2>
 
         {/* Filter Buttons */}
-        <div className="mb-4 text-center">
+        <div className="mb-4 d-flex flex-wrap justify-content-center gap-2 px-2">
           {categories.map((cat) => (
             <button
               key={cat}
-              className={`btn btn-outline-success mx-1 ${filter === cat ? 'active' : ''}`}
+              className={`btn btn-outline-success ${filter === cat ? 'active' : ''}`}
               onClick={() => setFilter(cat)}
             >
               {cat}
             </button>
           ))}
         </div>
+
 
         {/* Gallery Grid */}
         <div className="row">

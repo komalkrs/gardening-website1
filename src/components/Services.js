@@ -85,15 +85,15 @@ const Services = () => {
                 style={{ animationDelay: service.delay, animationFillMode: 'both' }}
               >
                 <div className="service-item rounded d-flex flex-wrap h-100">
-                  <div className="service-img rounded w-100">
+                  <div className="service-img rounded w-100 ">
                     <img
-                      className="img-fluid w-100"
+                      className="img-fluid w-100 "
                       src={service.image}
                       alt={service.alt}
                       loading="lazy"
                     />
                   </div>
-                  <div className="service-text rounded p-4">
+                  {/*<div className="service-text rounded p-4">
                     <h4 className="mb-3">
                       {service.icon}
                       {service.title}
@@ -108,7 +108,31 @@ const Services = () => {
                     >
                       <i className="fa fa-plus me-2"></i>Read More
                     </button>
+                  </div>*/}
+
+                  <div className="service-text rounded p-4">
+                    <h4 className="mb-3">
+                      {service.icon}
+                      {service.title}
+                    </h4>
+                    <p className="mb-4">{service.description}</p>
+                    {/* Responsive Button Layout */}
+                    <div className="d-flex flex-column flex-sm-row gap-2">
+                      <Link
+                        to={service.link}
+                        className="btn btn-success w-100 w-sm-auto"
+                      >
+                        <i className="fa fa-arrow-right me-2"></i>View Details
+                      </Link>
+                      <button
+                        className="btn bg-danger text-white w-100 w-sm-auto"
+                        onClick={() => setSelectedService(service)}
+                      >
+                        <i className="fa fa-plus me-2"></i>Read More
+                      </button>
+                    </div>
                   </div>
+
                 </div>
               </div>
             ))}

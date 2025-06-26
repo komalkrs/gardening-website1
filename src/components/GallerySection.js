@@ -47,17 +47,18 @@ const GallerySection = () => {
           <h2 className="mb-4">Our Garden Gallery</h2>
 
           {/* Filter Buttons */}
-          <div className="mb-4">
+          <div className="mb-4 d-flex flex-wrap justify-content-center gap-2 px-2">
             {categories.map(cat => (
               <button
                 key={cat}
-                className={`btn btn-outline-success mx-1 ${filter === cat ? 'active' : ''}`}
+                className={`btn btn-outline-success ${filter === cat ? 'active' : ''}`}
                 onClick={() => setFilter(cat)}
               >
                 {cat}
               </button>
             ))}
           </div>
+
 
           {/* Masonry Image Grid */}
           <div className="gallery-grid">
