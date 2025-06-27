@@ -82,14 +82,14 @@ const GallerySection = () => {
             tabIndex="-1"
             onClick={() => setSelectedImage(null)}
             style={{
-              zIndex: 1055, // Higher than navbar (default Bootstrap modal z-index)
+              zIndex: 1055,
               position: 'fixed',
               top: 0,
               left: 0,
               width: '100%',
               height: '100%',
               overflowY: 'auto',
-              padding: '60px 15px', // Top & bottom padding for spacing
+              padding: '60px 15px',
             }}
           >
             <div
@@ -98,9 +98,20 @@ const GallerySection = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="modal-content bg-white position-relative">
+
+                {/* ✅ Sticky Close Button for Mobile */}
+                <div className="sticky-top bg-white d-block d-sm-none text-end p-2 border-bottom">
+                  <button
+                    type="button"
+                    className="btn-close bg-danger"
+                    onClick={() => setSelectedImage(null)}
+                  ></button>
+                </div>
+
+                {/* ✅ Normal Close Button for Desktop */}
                 <button
                   type="button"
-                  className="btn-close position-absolute top-0 end-0 m-2 bg-danger"
+                  className="btn-close position-absolute top-0 end-0 m-2 bg-danger d-none d-sm-block"
                   onClick={() => setSelectedImage(null)}
                   style={{ zIndex: 1060 }}
                 ></button>
@@ -127,6 +138,7 @@ const GallerySection = () => {
             </div>
           </div>
         )}
+
 
 
 
