@@ -77,22 +77,51 @@ const GallerySection = () => {
 
         {/* Modal Lightbox */}
         {selectedImage && (
-          <div className="modal show d-block" tabIndex="-1" onClick={() => setSelectedImage(null)}>
-            <div className="modal-dialog modal-lg modal-dialog-centered" onClick={e => e.stopPropagation()}>
-              <div className="modal-content">
-                <div className="modal-body p-0">
-                  <img src={selectedImage.src} alt={selectedImage.alt} className="img-fluid w-100" />
-                  <p className="text-center mt-2">{selectedImage.alt}</p>
+          <div
+            className="modal show d-block bg-dark bg-opacity-75 mt-5"
+            tabIndex="-1"
+            onClick={() => setSelectedImage(null)}
+            style={{
+              overflowY: 'auto',
+              paddingTop: '60px',  // add spacing from top
+              paddingBottom: '60px', // spacing from bottom
+            }}
+          >
+            <div
+              className="modal-dialog modal-md modal-dialog-centered"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="modal-content bg-white">
+                <div className="modal-body p-5 text-center">
+                  <img
+                    src={selectedImage.src}
+                    alt={selectedImage.alt}
+                    loading="lazy"
+                    className="img-fluid"
+                    style={{
+                      width: '100%',
+                      maxHeight: '60vh',
+                      objectFit: 'contain',
+                      // Optional: shows black padding if image is smaller
+                      borderRadius: '10px',
+                    }}
+                  />
+                  <p className="mt-3 mb-2">{selectedImage.alt}</p>
+                  <a href={selectedImage.link} className="btn btn-success mb-3">
+                    View Full Project
+                  </a>
                 </div>
                 <button
                   type="button"
-                  className="btn-close position-absolute top-0 end-0 m-3"
+                  className="btn-close position-absolute top-0 end-0 m-3 bg-danger"
                   onClick={() => setSelectedImage(null)}
                 ></button>
               </div>
             </div>
           </div>
         )}
+
+
       </section>
     </>
   );

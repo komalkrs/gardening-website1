@@ -61,7 +61,7 @@ const Home = () => {
               {/* Background Image */}
               <img
                 className="w-100"
-                src="/images/header1.webp"
+                src="/images/header.webp"
                 alt="Banner 2"
                 loading="eager"
                 width="1920"

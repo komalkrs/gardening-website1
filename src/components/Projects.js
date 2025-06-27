@@ -52,32 +52,43 @@ const Projects = () => {
 
 
         {/* Gallery Grid */}
-        <div className="row">
+        <div className="row g-4">
           {filteredImages.map((img, index) => (
             <div
-              className="col-md-4 mb-4"
+              className="col-md-4"
               key={index}
               onClick={() => setSelectedImage(img)}
               style={{ cursor: 'pointer' }}
             >
-              <img src={img.src} alt={img.alt} loading="lazy" className="img-fluid rounded shadow-sm" style={{
-                width: '100%', height: '300px', objectFit: 'cover', borderRadius: '10px'
-              }} />
+              <img
+                src={img.src}
+                alt={img.alt}
+                loading="lazy"
+                className="img-fluid shadow-sm"
+                style={{
+                  width: '100%',
+                  height: '300px',
+                  objectFit: 'cover',
+                  borderRadius: '10px',
+                  display: 'block',
+                }}
+              />
               <div className="text-center mt-2">
-                <p>{img.alt}</p>
-                <a href={img.link} className="btn btn-sm btn-success mt-1">
+                <p className="mb-1">{img.alt}</p>
+                <a href={img.link} className="btn btn-sm btn-success">
                   View Full Project
                 </a>
               </div>
             </div>
           ))}
         </div>
+
       </div>
       <BeforeAfterGallery />
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
-          className="modal show d-block"
+          className="modal show d-block bg-dark bg-opacity-75"
           tabIndex="-1"
           onClick={() => setSelectedImage(null)}
         >
@@ -90,11 +101,19 @@ const Projects = () => {
                 <img
                   src={selectedImage.src}
                   alt={selectedImage.alt}
-                  className="img-fluid w-70 rounded"
                   loading="lazy"
+                  className="img-fluid rounded shadow-sm"
+                  style={{
+                    width: '100%',
+                    height: '400px', // You can change to 300px to match grid
+                    objectFit: 'cover',
+                    borderRadius: '15px',
+                    display: 'block',
+                    margin: '0 auto',
+                  }}
                 />
                 <p className="text-center my-3">{selectedImage.alt}</p>
-                <div className="text-center mb-3">
+                <div className="text-center">
                   <a href={selectedImage.link} className="btn btn-success">
                     View Full Project
                   </a>
@@ -102,13 +121,14 @@ const Projects = () => {
               </div>
               <button
                 type="button"
-                className="btn-close position-absolute top-0 end-0 m-3"
+                className="btn-close position-absolute top-0 end-0 m-3 bg-danger"
                 onClick={() => setSelectedImage(null)}
               ></button>
             </div>
           </div>
         </div>
       )}
+
     </>
   );
 };
