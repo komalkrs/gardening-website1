@@ -78,45 +78,21 @@ const GallerySection = () => {
         {/* Modal Lightbox */}
         {selectedImage && (
           <div
-            className="modal show d-block bg-dark bg-opacity-75"
+            className="modal show d-block bg-dark bg-opacity-75 "
             tabIndex="-1"
             onClick={() => setSelectedImage(null)}
             style={{
-              zIndex: 1055,
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
               overflowY: 'auto',
-              padding: '60px 15px',
+              paddingTop: '60px',  // add spacing from top
+              paddingBottom: '60px', // spacing from bottom
             }}
           >
             <div
-              className={`modal-dialog ${window.innerWidth <= 576 ? 'modal-sm' : 'modal-md'} modal-dialog-centered`}
-              style={{ maxWidth: '100%' }}
+              className="modal-dialog modal-md modal-dialog-centered"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="modal-content bg-white position-relative">
-
-                {/* ✅ Sticky Close Button for Mobile */}
-                <div className="sticky-top bg-white d-block d-sm-none text-end p-2 border-bottom">
-                  <button
-                    type="button"
-                    className="btn-close bg-danger"
-                    onClick={() => setSelectedImage(null)}
-                  ></button>
-                </div>
-
-                {/* ✅ Normal Close Button for Desktop */}
-                <button
-                  type="button"
-                  className="btn-close position-absolute top-0 end-0 m-2 bg-danger d-none d-sm-block"
-                  onClick={() => setSelectedImage(null)}
-                  style={{ zIndex: 1060 }}
-                ></button>
-
-                <div className="modal-body p-4 text-center">
+              <div className="modal-content bg-white mt-5">
+                <div className="modal-body p-5 text-center">
                   <img
                     src={selectedImage.src}
                     alt={selectedImage.alt}
@@ -126,6 +102,7 @@ const GallerySection = () => {
                       width: '100%',
                       maxHeight: '60vh',
                       objectFit: 'contain',
+                      // Optional: shows black padding if image is smaller
                       borderRadius: '10px',
                     }}
                   />
@@ -134,13 +111,15 @@ const GallerySection = () => {
                     View Full Project
                   </a>
                 </div>
+                <button
+                  type="button"
+                  className="btn-close position-absolute top-0 end-0 m-3 bg-danger"
+                  onClick={() => setSelectedImage(null)}
+                ></button>
               </div>
             </div>
           </div>
         )}
-
-
-
 
 
       </section>
