@@ -77,66 +77,48 @@ const GallerySection = () => {
 
         {/* Modal Lightbox */}
         {selectedImage && (
-  <div
-    className="modal show d-block bg-dark bg-opacity-75"
-    tabIndex="-1"
-    onClick={() => setSelectedImage(null)}
-    style={{
-      zIndex: 2000, // ensure modal is above navbar
-      overflowY: 'auto',
-      padding: '40px 10px',
-    }}
-  >
-    <div
-      className="modal-dialog modal-dialog-centered"
-      style={{
-        maxWidth: '90vw',
-        margin: 'auto',
-      }}
-      onClick={(e) => e.stopPropagation()}
-    >
-      <div className="modal-content bg-white position-relative">
-        <div className="modal-body p-3 text-center">
-          <img
-            src={selectedImage.src}
-            alt={selectedImage.alt}
-            loading="lazy"
-            className="img-fluid"
+          <div
+            className="modal show d-block bg-dark bg-opacity-75 mt-5"
+            tabIndex="-1"
+            onClick={() => setSelectedImage(null)}
             style={{
-              width: '100%',
-              height: 'auto',
-              maxHeight: '70vh',
-              objectFit: 'contain',
-              borderRadius: '10px',
+              overflowY: 'auto',
+              paddingTop: '60px',
+              paddingBottom: '60px',
             }}
-          />
-          <p className="mt-3 mb-2">{selectedImage.alt}</p>
-          <a
-            href={selectedImage.link}
-            className="btn btn-success mb-3"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            View Full Project
-          </a>
-        </div>
-
-        {/* ✅ Close button: Ensure it floats above */}
-        <button
-          type="button"
-          className="btn-close position-absolute"
-          style={{
-            top: '10px',
-            right: '10px',
-            zIndex: 2050, // 👈 ensures button is above all content
-          }}
-          onClick={() => setSelectedImage(null)}
-        ></button>
-      </div>
-    </div>
-  </div>
-)}
-
+            <div
+              className={`modal-dialog ${window.innerWidth <= 576 ? 'modal-sm' : 'modal-md'} modal-dialog-centered`}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="modal-content bg-white">
+                <div className="modal-body p-5 text-center">
+                  <img
+                    src={selectedImage.src}
+                    alt={selectedImage.alt}
+                    loading="lazy"
+                    className="img-fluid"
+                    style={{
+                      width: '100%',
+                      maxHeight: '60vh',
+                      objectFit: 'contain',
+                      borderRadius: '10px',
+                    }}
+                  />
+                  <p className="mt-3 mb-2">{selectedImage.alt}</p>
+                  <a href={selectedImage.link} className="btn btn-success mb-3">
+                    View Full Project
+                  </a>
+                </div>
+                <button
+                  type="button"
+                  className="btn-close position-absolute top-0 end-0 m-3 bg-danger"
+                  onClick={() => setSelectedImage(null)}
+                ></button>
+              </div>
+            </div>
+          </div>
+        )}
 
 
 
