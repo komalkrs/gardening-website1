@@ -78,21 +78,34 @@ const GallerySection = () => {
         {/* Modal Lightbox */}
         {selectedImage && (
           <div
-            className="modal show d-block bg-dark bg-opacity-75 mt-5"
+            className="modal show d-block bg-dark bg-opacity-75"
             tabIndex="-1"
             onClick={() => setSelectedImage(null)}
             style={{
+              zIndex: 1055, // Higher than navbar (default Bootstrap modal z-index)
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
               overflowY: 'auto',
-              paddingTop: '60px',
-              paddingBottom: '60px',
+              padding: '60px 15px', // Top & bottom padding for spacing
             }}
           >
             <div
               className={`modal-dialog ${window.innerWidth <= 576 ? 'modal-sm' : 'modal-md'} modal-dialog-centered`}
+              style={{ maxWidth: '100%' }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="modal-content bg-white">
-                <div className="modal-body p-5 text-center">
+              <div className="modal-content bg-white position-relative">
+                <button
+                  type="button"
+                  className="btn-close position-absolute top-0 end-0 m-2 bg-danger"
+                  onClick={() => setSelectedImage(null)}
+                  style={{ zIndex: 1060 }}
+                ></button>
+
+                <div className="modal-body p-4 text-center">
                   <img
                     src={selectedImage.src}
                     alt={selectedImage.alt}
@@ -110,15 +123,11 @@ const GallerySection = () => {
                     View Full Project
                   </a>
                 </div>
-                <button
-                  type="button"
-                  className="btn-close position-absolute top-0 end-0 m-3 bg-danger"
-                  onClick={() => setSelectedImage(null)}
-                ></button>
               </div>
             </div>
           </div>
         )}
+
 
 
 
