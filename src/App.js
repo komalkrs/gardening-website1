@@ -39,8 +39,8 @@ const App = () => {
         {/* Sticky Wrapper */}
         <div className="sticky-top bg-white shadow-sm">
           {/* Top Bar */}
-          <div className="container-fluid text-dark py-2 px-3">
-            <div className="d-flex flex-column flex-md-row justify-content-between align-items-center d-none d-sm-block">
+          <div className="container-fluid text-dark px-3 py-2 d-none d-sm-block">
+            <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
               <div className="mb-2 mb-md-0">
                 <FaPhoneAlt className="me-2" /> +91-8855080150 &nbsp; | &nbsp;
                 <FaEnvelope className="ms-2" /> sandihpkadam@gmail.com

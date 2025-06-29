@@ -92,12 +92,12 @@ const GallerySection = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="modal-content bg-white mt-5">
-                <div className="modal-body p-5 text-center">
+                <div className="modal-body p-3 text-center pt-5">
                   <img
                     src={selectedImage.src}
                     alt={selectedImage.alt}
                     loading="lazy"
-                    className="img-fluid"
+                    className="img-fluid rounded shadow-sm"
                     style={{
                       width: '100%',
                       maxHeight: '60vh',
@@ -106,10 +106,8 @@ const GallerySection = () => {
                       borderRadius: '10px',
                     }}
                   />
-                  <p className="mt-3 mb-2">{selectedImage.alt}</p>
-                  <a href={selectedImage.link} className="btn btn-success mb-3">
-                    View Full Project
-                  </a>
+                  <p className="mt-2 mb-1">{selectedImage.alt}</p>
+                  
                 </div>
                 <button
                   type="button"
