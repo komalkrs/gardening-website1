@@ -100,7 +100,7 @@ const Contact = () => {
 
                 {submitted && (
                   <div className="alert alert-success mt-3">
-                    ✅ Message sent successfully!
+                    ✅ Thanks for contacting us!
                   </div>
                 )}
                 {error && (
