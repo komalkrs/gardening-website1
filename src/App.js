@@ -106,6 +106,7 @@ const App = () => {
       </Router>
       {/* Scroll to Top */}
       <ScrollToTopButton />
+      <SpeedInsights />
     </>
   );
 };
