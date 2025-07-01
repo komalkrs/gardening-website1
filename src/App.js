@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
