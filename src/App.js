@@ -104,9 +104,10 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
+      <SpeedInsights />
       {/* Scroll to Top */}
       <ScrollToTopButton />
-      <SpeedInsights />
+      
     </>
   );
 };
